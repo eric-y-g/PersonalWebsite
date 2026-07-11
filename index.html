@@ -1,47 +1,117 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Eric Gao's Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eric Gao's personal portfolio: computer science, projects, ideas, and interests.">
+    <title>Eric Gao — Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Eric Gao</h1>
-        <a href="#About me">About Me</a>
-        <a href="#Hobbies">Hobbies</a>
-        <a href="#Contact">Contact</a>
-    </header>
+    <div class="site-shell">
+        <header class="topbar">
+            <a class="monogram" href="#top" aria-label="Back to top">e</a>
+            <p class="breadcrumb"><span>Drafts</span><b>/</b> Portfolio</p>
+            <a class="top-link" href="mailto:ericyihang.gao@mail.utoronto.ca">Let's talk <span aria-hidden="true">↗</span></a>
+        </header>
 
-    <section id="About me">
-        <h2>About me</h2>
-        <p>My name is Eric Gao, a computer science student currently studying at University of Toronto. Feel free to message me.</p>
-    </section>    
+        <main id="top">
+            <section class="hero" aria-labelledby="hero-title">
+                <p class="eyebrow">Computer science / Toronto, Canada</p>
+                <h1 id="hero-title">ERIC <span>GAO</span></h1>
+                <p class="hero-subtitle">Student, builder, and curious human making useful things for the web.</p>
+            </section>
 
-    <section id="Hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li> Badminton (I'm super washed rn, haven't trained since covid started)</li>
-            <li> Video Games, (League of Legends, CS, Star-rail, ZZZ, Arknight)</li>
-            <li> Movies (sometimes I will just sit there and watch my favorite movie for the tenth time.)</li>
-        </ul>
-    </section>    
+            <nav class="section-nav" aria-label="Page sections">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-    <section id="Contact">
-        <h2>Contact</h2>
-        <p>Email me at <a href="mailto:ericyihang.gao@mail.utoronto.ca">ericyihang.gao@mail.utoronto.ca</a> or fill out the following form</p>
-        <form> 
-            <label>Name</label>
-            <input type="text" id="Contact_Name"><br><br>
-            <label>Email</label>
-            <input type="text" id="Contact_Email"><br><br>
-            <label>Message</label>
-            <input type="text" id="Message"><br><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>    
+            <div class="bento-grid">
+                <article class="card pitch-card" id="about">
+                    <div class="card-heading"><span>01</span><h2>Elevator pitch</h2></div>
+                    <div class="pitch-copy">
+                        <p>I like turning</p>
+                        <p class="accent-script">rough ideas</p>
+                        <p>into things people can actually use.</p>
+                    </div>
+                    <p class="card-note">Currently studying Computer Science at the University of Toronto and learning by building in public.</p>
+                </article>
 
-    <footer>
-        &copy; 2025 Eric Gao. All rights reserved.
-    </footer>
+                <article class="card signal-card">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <p class="mini-label">Currently</p>
+                    <h2>Learning in<br><em>public</em></h2>
+                    <div class="signal-mark" aria-hidden="true">✦</div>
+                </article>
+
+                <article class="card interest-card">
+                    <div class="orbital" aria-hidden="true"><span>✦</span></div>
+                    <p class="mini-label">Off the clock</p>
+                    <h2>Badminton<br><span>· games · films</span></h2>
+                </article>
+
+                <article class="card featured-card" id="projects">
+                    <div class="feature-art" aria-hidden="true">
+                        <span class="feature-tag">FEATURED / 01</span>
+                        <div class="terminal-window">
+                            <span>hello, world</span>
+                            <strong>build<br>something<br>kind.</strong>
+                            <i>↘</i>
+                        </div>
+                    </div>
+                    <div class="feature-copy">
+                        <div>
+                            <p class="mini-label">Featured project</p>
+                            <h2>Personal portfolio</h2>
+                            <p>A small, expressive home for the things I'm learning, making, and thinking about.</p>
+                        </div>
+                        <a class="round-arrow" href="#contact" aria-label="Ask me about this project">↗</a>
+                    </div>
+                </article>
+
+                <article class="card work-card" id="work">
+                    <div class="card-heading"><span>02</span><h2>Work &amp; study</h2><span class="heading-arrow" aria-hidden="true">↗</span></div>
+                    <div class="timeline">
+                        <div class="timeline-item"><span class="timeline-icon blue">⌘</span><div><h3>University of Toronto <small>— Computer Science</small></h3><p>Building a foundation in systems, software, and problem solving.</p></div></div>
+                        <div class="timeline-item"><span class="timeline-icon pink">↗</span><div><h3>Personal projects <small>— Builder</small></h3><p>Exploring web development, data, and interfaces that feel good to use.</p></div></div>
+                        <div class="timeline-item"><span class="timeline-icon yellow">✳</span><div><h3>Next chapter <small>— Open</small></h3><p>Looking for thoughtful people and meaningful problems to work on.</p></div></div>
+                    </div>
+                </article>
+
+                <nav class="social-card" aria-label="Social links">
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+                    <a href="mailto:ericyihang.gao@mail.utoronto.ca" aria-label="Email">@</a>
+                    <a href="#contact" aria-label="Contact section">✦</a>
+                </nav>
+
+                <article class="card location-card">
+                    <div class="card-heading"><span>03</span><h2>Based in</h2></div>
+                    <div class="location-body"><span class="location-pin">●</span><strong>Toronto</strong><span class="location-code">YYZ</span></div>
+                    <p>Always happy to meet good people, wherever they are.</p>
+                </article>
+
+                <article class="card now-card">
+                    <p class="mini-label">A tiny status update</p>
+                    <div class="progress-ring"><span>∞</span></div>
+                    <h2>Making room<br>for better ideas.</h2>
+                </article>
+
+                <article class="card notes-card" id="contact">
+                    <div class="card-heading"><span>04</span><h2>Notes to self</h2><span class="heading-arrow" aria-hidden="true">↗</span></div>
+                    <div class="note-list">
+                        <a href="mailto:ericyihang.gao@mail.utoronto.ca"><span>01</span><div><h3>Say hello</h3><p>ericyihang.gao@mail.utoronto.ca</p></div><b>↗</b></a>
+                        <a href="#projects"><span>02</span><div><h3>Keep building</h3><p>Small projects are still progress.</p></div><b>↗</b></a>
+                        <a href="#about"><span>03</span><div><h3>Stay curious</h3><p>The best ideas usually start as questions.</p></div><b>↗</b></a>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer class="footer"><p>© 2025 Eric Gao</p><p>Made with curiosity <span aria-hidden="true">✦</span></p><a href="#top">Back to top ↑</a></footer>
+    </div>
 </body>
 </html>
